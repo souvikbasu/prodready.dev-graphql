@@ -20,7 +20,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.8",
     "mongoose-unique-validator": "^3.0.0",
-    "subscriptions-transport-ws": "^0.9.16"
+    "stripe": "^8.191.0",
+    "subscriptions-transport-ws": "^0.9.16",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"

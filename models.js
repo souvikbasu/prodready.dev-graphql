@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import uniqueValidator from 'mongoose-unique-validator'
 
 const { Schema } = mongoose;
 
@@ -11,7 +10,6 @@ const EnrollSchema = new Schema({
   },
 });
 
-EnrollSchema.plugin(uniqueValidator);
 const Enroll = mongoose.model("Enroll", EnrollSchema);
 
 export { Enroll };
