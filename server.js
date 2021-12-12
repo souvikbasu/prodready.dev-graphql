@@ -31,10 +31,10 @@ async function startApolloServer(typeDefs, resolvers) {
   server.applyMiddleware({ app });
 
   mongoose
-    .connect(
-      `mongodb+srv://shoonya-test:shoonya-test@cluster0.sa0ig.mongodb.net/shoonya?retryWrites=true&w=majority`,
-      { useNewUrlParser: true, useUnifiedTopology: true }
-    )
+    .connect(process.env.DB_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
     .then((res) => {
       httpServer.listen({ port: process.env.PORT || 4000 }, () => {
         console.log(`Server ready!`);
