@@ -5,7 +5,7 @@ const QueryAndMutation = `
         enrollCount: Int
     }
     type Mutation {
-        saveUserSpot(email: String): Enroll
+        saveUserSpot(email: String, date: String, tz: String): Enroll
     }
 `;
 
