@@ -6,7 +6,6 @@ const EnrollSchema = new Schema({
   email: {
     type: String,
     required: true,
-    unique: true,
   },
   date: String,
   tz: String,

@@ -22,7 +22,6 @@ const enrollResolver = {
         return new ApolloError(
           "Looks like you have already enrolled. I will keep you posted. Thanks for joining"
         );
-        console.error(err);
       }
     },
   },
